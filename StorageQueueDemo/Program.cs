@@ -14,21 +14,20 @@ namespace StorageQueueDemo
             // Instantiate a QueueClient which will be used to create and manipulate the queue
             QueueClient queueClient = new QueueClient(storageConnectionString, queueName);
 
-            if (queueClient.Exists())
+            if (!queueClient.Exists()) return;
+
+            while (true)
             {
-                while (true)
+                // Get the next message
+                QueueMessage[] retrievedMessages = queueClient.ReceiveMessages(1);
+
+                if (retrievedMessages.Length > 0)
                 {
-                    // Get the next message
-                    QueueMessage[] retrievedMessages = queueClient.ReceiveMessages(1);
+                    // Process (i.e. print) the message in less than 30 seconds
+                    Console.WriteLine($"Dequeued message: '{retrievedMessages[0].MessageText}'");
 
-                    if (retrievedMessages.Length > 0)
-                    {
-                        // Process (i.e. print) the message in less than 30 seconds
-                        Console.WriteLine($"Dequeued message: '{retrievedMessages[0].MessageText}'");
-
-                        // Delete the message
-                        queueClient.DeleteMessage(retrievedMessages[0].MessageId, retrievedMessages[0].PopReceipt);
-                    }
+                    // Delete the message
+                    queueClient.DeleteMessage(retrievedMessages[0].MessageId, retrievedMessages[0].PopReceipt);
                 }
             }
         }
