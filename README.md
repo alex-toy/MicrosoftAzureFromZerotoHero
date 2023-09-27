@@ -18,3 +18,8 @@
 
 - remove the *User.Read* permission
 <img src="/pictures/api.png" title="api"  width="900">
+
+### ARM Templates
+```
+arm create
+```
