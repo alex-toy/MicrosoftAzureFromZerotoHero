@@ -19,8 +19,10 @@
 - create VM
 <img src="/pictures/vm.png" title="virtual machine"  width="900">
 
+### ARM Templates
+
 - create template
-<img src="/pictures/vm1.png" title="virtual machine"  width="900">
+<img src="/pictures/vm1.png" title="virtual machine"  width="500">
 
 - deploy
 ```
@@ -30,7 +32,10 @@ az deployment group create --resource-group alexeirg --template-file "ARMTemplat
 - once the deployment is done, you should have the following result
 <img src="/pictures/vm2.png" title="virtual machine"  width="900">
 
-### ARM Templates
-```
-arm create
-```
+### Virtual Machine Scale Set
+
+- create VMSS
+<img src="/pictures/vmss.png" title="virtual machine scale set"  width="900">
+
+- add *Custom Autoscale*
+<img src="/pictures/vmss2.png" title="virtual machine scale set"  width="900">
