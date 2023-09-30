@@ -12,6 +12,10 @@
 - Disaster Recovery (DR)
 
 
+## Resource List
+<img src="/pictures/resources.png" title="resources"  width="500">
+
+
 ## Azure Compute
 
 ### Creating virtual machine
@@ -37,5 +41,37 @@ az deployment group create --resource-group alexeirg --template-file "ARMTemplat
 - create VMSS
 <img src="/pictures/vmss.png" title="virtual machine scale set"  width="900">
 
-- add *Custom Autoscale*
+- add *Custom Autoscale* for adding a VM
 <img src="/pictures/vmss2.png" title="virtual machine scale set"  width="900">
+
+- add *Custom Autoscale* for removing a VM
+<img src="/pictures/vmss3.png" title="virtual machine scale set"  width="900">
+
+### Azure Instance Metadata Service
+
+- inside your VM, install Postman
+<img src="/pictures/ims.png" title="instance metadata service"  width="900">
+
+- in postman, add in the headers
+```
+Metadata : true
+```
+
+- query that link
+```
+http://169.254.169.254/metadata/instance?api-version=2021-12-13
+```
+
+- you will get all the infos for the VM
+<img src="/pictures/ims2.png" title="instance metadata service"  width="900">
+
+- query that link
+```
+http://169.254.169.254/metadata/scheduledevents?api-version=2020-07-01
+```
+
+- you will get all the scheduled events for the VM
+<img src="/pictures/ims3.png" title="instance metadata service"  width="900">
+
+
+
