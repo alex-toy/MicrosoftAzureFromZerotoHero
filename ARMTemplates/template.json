@@ -41,13 +41,10 @@
         "virtualMachineComputerName": {
             "type": "string"
         },
-        "virtualMachineRG": {
+        "storageAccountType": {
             "type": "string"
         },
-        "osDiskType": {
-            "type": "string"
-        },
-        "virtualMachineSize": {
+        "vmSize": {
             "type": "string"
         },
         "adminUsername": {
@@ -154,13 +151,13 @@
             ],
             "properties": {
                 "hardwareProfile": {
-                    "vmSize": "[parameters('virtualMachineSize')]"
+                    "vmSize": "[parameters('vmSize')]"
                 },
                 "storageProfile": {
                     "osDisk": {
                         "createOption": "fromImage",
                         "managedDisk": {
-                            "storageAccountType": "[parameters('osDiskType')]"
+                            "storageAccountType": "[parameters('storageAccountType')]"
                         }
                     },
                     "imageReference": {

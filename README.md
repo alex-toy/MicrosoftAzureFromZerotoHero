@@ -50,7 +50,6 @@ az deployment group create --resource-group alexeirg --template-file "ARMTemplat
 ### Azure Instance Metadata Service
 
 - inside your VM, install Postman
-<img src="/pictures/ims.png" title="instance metadata service"  width="900">
 
 - in postman, add in the headers
 ```
@@ -74,4 +73,9 @@ http://169.254.169.254/metadata/scheduledevents?api-version=2020-07-01
 <img src="/pictures/ims3.png" title="instance metadata service"  width="900">
 
 
+## Setting up the catalog app
 
+### Creating virtual machine
+
+- create VM
+<img src="/pictures/vm.png" title="virtual machine"  width="900">

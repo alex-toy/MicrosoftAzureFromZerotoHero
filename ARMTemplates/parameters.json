@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "westeurope"
+            "value": "northeurope"
         },
         "networkInterfaceName": {
-            "value": "optimized-vm369"
+            "value": "catalog-vm369"
         },
         "networkSecurityGroupName": {
-            "value": "optimized-vm-nsg"
+            "value": "catalog-vm-nsg"
         },
         "networkSecurityGroupRules": {
             "value": [
@@ -50,7 +50,7 @@
             ]
         },
         "publicIpAddressName": {
-            "value": "optimized-vm-ip"
+            "value": "catalog-vm-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
@@ -59,18 +59,18 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "optimized-vm"
+            "value": "catalog-vm"
         },
         "virtualMachineComputerName": {
-            "value": "optimized-vm"
+            "value": "catalog-vm"
         },
         "virtualMachineRG": {
-            "value": "optimized-vm-rg"
+            "value": "catalog-vm-rg"
         },
-        "osDiskType": {
+        "storageAccountType": {
             "value": "StandardSSD_LRS"
         },
-        "virtualMachineSize": {
+        "vmSize": {
             "value": "Standard_D2s_v3"
         },
         "adminUsername": {
