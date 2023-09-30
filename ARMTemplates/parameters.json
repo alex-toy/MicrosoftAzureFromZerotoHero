@@ -74,10 +74,10 @@
             "value": "Standard_D2s_v3"
         },
         "adminUsername": {
-            "value": "memiadmin"
+            "value": "alexeiadmin"
         },
         "adminPassword": {
-            "value": "YourPassword"
+            "value": "Abcd.1234567"
         },
         "patchMode": {
             "value": "AutomaticByOS"

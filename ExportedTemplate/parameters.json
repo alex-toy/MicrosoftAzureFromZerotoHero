@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_first_vm_name": {
+            "value": null
+        },
+        "disks_first_vm_OsDisk_1_214ff9302a0a4c9a914b06c04240f848_externalid": {
+            "value": null
+        },
+        "networkInterfaces_first_vm297_z1_externalid": {
+            "value": null
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        }
+    }
+}

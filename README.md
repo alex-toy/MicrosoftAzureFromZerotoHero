@@ -16,8 +16,19 @@
 
 ### Creating virtual machine
 
-- remove the *User.Read* permission
-<img src="/pictures/api.png" title="api"  width="900">
+- create VM
+<img src="/pictures/vm.png" title="virtual machine"  width="900">
+
+- create template
+<img src="/pictures/vm1.png" title="virtual machine"  width="900">
+
+- deploy
+```
+az deployment group create --resource-group alexeirg --template-file "ARMTemplates\template.json" --parameters "ARMTemplates\parameters.json"
+```
+
+- once the deployment is done, you should have the following result
+<img src="/pictures/vm2.png" title="virtual machine"  width="900">
 
 ### ARM Templates
 ```
