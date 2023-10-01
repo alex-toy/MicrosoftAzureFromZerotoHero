@@ -41,6 +41,9 @@
         "virtualMachineComputerName": {
             "type": "string"
         },
+        "virtualMachineRG": {
+            "type": "string"
+        },
         "storageAccountType": {
             "type": "string"
         },

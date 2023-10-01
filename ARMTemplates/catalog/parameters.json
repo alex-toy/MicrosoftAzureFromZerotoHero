@@ -32,7 +32,7 @@
             "value": "default"
         },
         "virtualNetworkName": {
-            "value": "optimized-vm-rg-vnet"
+            "value": "readit-app-vnet"
         },
         "addressPrefixes": {
             "value": [
@@ -53,7 +53,7 @@
             "value": "catalog-vm-ip"
         },
         "publicIpAddressType": {
-            "value": "Dynamic"
+            "value": "Static"
         },
         "publicIpAddressSku": {
             "value": "Basic"
@@ -65,7 +65,7 @@
             "value": "catalog-vm"
         },
         "virtualMachineRG": {
-            "value": "catalog-vm-rg"
+            "value": "readit-app-rg"
         },
         "storageAccountType": {
             "value": "StandardSSD_LRS"

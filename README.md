@@ -73,9 +73,59 @@ http://169.254.169.254/metadata/scheduledevents?api-version=2020-07-01
 <img src="/pictures/ims3.png" title="instance metadata service"  width="900">
 
 
-## Setting up the catalog app
+## Setting up
 
-### Creating virtual machine
+### Setting up the catalog app
 
-- create VM
-<img src="/pictures/vm.png" title="virtual machine"  width="900">
+- create catalog VM- deploy
+```
+az group create -l northeurope -n readit-app-rg
+
+az deployment group create --resource-group readit-app-rg --template-file "ARMTemplates\catalog\template.json" --parameters "ARMTemplates\catalog\parameters.json"
+```
+<img src="/pictures/catalog_app.png" title="catalog app"  width="900">
+
+- connect to it by RDP
+
+- turn off *Enhanced Security Configuration*
+<img src="/pictures/catalog_app2.png" title="catalog app"  width="900">
+
+- install IIS
+<img src="/pictures/catalog_app3.png" title="catalog app"  width="900">
+<img src="/pictures/catalog_app4.png" title="catalog app"  width="900">
+<img src="/pictures/catalog_app5.png" title="catalog app"  width="900">
+<img src="/pictures/catalog_app6.png" title="catalog app"  width="900">
+
+- install .NET 6 *Hosting Bundle*
+<img src="/pictures/catalog_app7.png" title="catalog app"  width="900">
+
+- create a *catalog* folder to host the app
+<img src="/pictures/catalog_app8.png" title="catalog app"  width="900">
+
+- publish the app to a local folder
+<img src="/pictures/catalog_app9.png" title="catalog app"  width="900">
+
+- copy all the published files to the VM in the *catalog* folder
+
+- open IIS Manager and add web site
+<img src="/pictures/catalog_app10.png" title="catalog app"  width="900">
+<img src="/pictures/catalog_app11.png" title="catalog app"  width="900">
+
+- you should now be able to start the app inside the VM
+<img src="/pictures/catalog_app12.png" title="catalog app"  width="900">
+
+- turn off the firewalls in the VM
+<img src="/pictures/catalog_app13.png" title="catalog app"  width="900">
+
+### Setting up the weather API
+
+- run commands
+```
+sudo apt install git
+sudo apt update
+sudo apt install nodejs
+sudo git clone https://github.com/memilavi/weatherAPI.git
+cd weatherAPI
+sudo apt install npm
+npm start
+```
