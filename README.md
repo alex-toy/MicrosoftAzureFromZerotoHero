@@ -75,6 +75,11 @@ http://169.254.169.254/metadata/scheduledevents?api-version=2020-07-01
 
 ## Setting up
 
+In order to quickly delete all resources, run
+```
+./delete_resources.ps1
+```
+
 ### Setting up the catalog app
 
 - create catalog VM
