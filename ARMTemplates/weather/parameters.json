@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "northeurope"
+        },
+        "networkInterfaceName": {
+            "value": "weather-vm-ni"
+        },
+        "networkSecurityGroupName": {
+            "value": "weather-vm-nsg"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "virtualNetworkName": {
+            "value": "readit-app-vnet"
+        },
+        "vmName": {
+            "value": "weather-vm"
+        },
+        "vmSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "alexeiadmin"
+        },
+        "adminPasswordOrKey": {
+            "value": "Abcd.1234567"
+        }
+    }
+}

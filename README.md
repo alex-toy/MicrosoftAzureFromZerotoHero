@@ -77,7 +77,7 @@ http://169.254.169.254/metadata/scheduledevents?api-version=2020-07-01
 
 ### Setting up the catalog app
 
-- create catalog VM- deploy
+- create catalog VM
 ```
 az group create -l northeurope -n readit-app-rg
 
@@ -119,7 +119,14 @@ az deployment group create --resource-group readit-app-rg --template-file "ARMTe
 
 ### Setting up the weather API
 
-- run commands
+- create weather VM
+```
+az group create -l northeurope -n readit-app-rg
+
+az deployment group create --resource-group readit-app-rg --template-file "ARMTemplates\weather\template.json" --parameters "ARMTemplates\weather\parameters.json"
+```
+
+- connect to the VM through *Putty* and run commands
 ```
 sudo apt install git
 sudo apt update
