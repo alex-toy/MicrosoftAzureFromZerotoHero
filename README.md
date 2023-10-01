@@ -121,8 +121,6 @@ az deployment group create --resource-group readit-app-rg --template-file "ARMTe
 
 - create weather VM
 ```
-az group create -l northeurope -n readit-app-rg
-
 az deployment group create --resource-group readit-app-rg --template-file "ARMTemplates\weather\template.json" --parameters "ARMTemplates\weather\parameters.json"
 ```
 
@@ -136,3 +134,6 @@ cd weatherAPI
 sudo apt install npm
 npm start
 ```
+
+- in the catalog VM, paste the private IP of the weather VM. The two apps are able to communicate since they are on the same subnet.
+<img src="/pictures/weather_app.png" title="weather app"  width="900">
