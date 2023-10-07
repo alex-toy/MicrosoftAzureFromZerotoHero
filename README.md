@@ -205,3 +205,10 @@ az functionapp create -n readitfaalexei -s readitstoragealexei -g readit-app-rg 
 ```
 <img src="/pictures/order3.png" title="order"  width="900">
 
+- publish the function app
+<img src="/pictures/order4.png" title="order"  width="900">
+
+- test the function app
+<img src="/pictures/order5.png" title="order"  width="900">
+<img src="/pictures/order51.png" title="order"  width="900">
+
