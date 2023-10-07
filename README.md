@@ -165,3 +165,15 @@ az deployment group create --resource-group readit-app-rg --template-file "ARMTe
 
 - run locally
 <img src="/pictures/cart.png" title="cart"  width="900">
+
+- create container registry
+<img src="/pictures/cart1.png" title="cart"  width="500">
+
+- enable admin user
+<img src="/pictures/cart2.png" title="cart"  width="900">
+
+- add acces control
+<img src="/pictures/cart21.png" title="cart"  width="900">
+
+- publish to ACR
+<img src="/pictures/cart3.png" title="cart"  width="900">
