@@ -172,8 +172,23 @@ az deployment group create --resource-group readit-app-rg --template-file "ARMTe
 - enable admin user
 <img src="/pictures/cart2.png" title="cart"  width="900">
 
-- add acces control
+- add role assignment
 <img src="/pictures/cart21.png" title="cart"  width="900">
 
 - publish to ACR
 <img src="/pictures/cart3.png" title="cart"  width="900">
+<img src="/pictures/cart31.png" title="cart"  width="900">
+<img src="/pictures/cart32.png" title="cart"  width="900">
+<img src="/pictures/cart33.png" title="cart"  width="900">
+
+- see the container in the repository
+<img src="/pictures/cart4.png" title="cart"  width="900">
+
+- create a kubernetes cluster
+<img src="/pictures/cart5.png" title="cart"  width="500">
+<img src="/pictures/cart51.png" title="cart"  width="500">
+
+- run commands
+```
+az aks install-cli
+```
