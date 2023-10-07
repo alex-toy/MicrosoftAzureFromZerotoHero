@@ -160,3 +160,8 @@ az deployment group create --resource-group readit-app-rg --template-file "ARMTe
 
 - see that it's running
 <img src="/pictures/ias31.png" title="inventory app service"  width="900">
+
+### Setting up Cart
+
+- run locally
+<img src="/pictures/cart.png" title="cart"  width="900">
