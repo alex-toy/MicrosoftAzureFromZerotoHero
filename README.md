@@ -145,3 +145,18 @@ npm start
 
 - in the catalog VM, paste the private IP of the weather VM. The two apps are able to communicate since they are on the same subnet.
 <img src="/pictures/weather_app.png" title="weather app"  width="900">
+
+### Setting up Inventory App Service
+
+- create Web App
+```
+az deployment group create --resource-group readit-app-rg --template-file "ARMTemplates\web_app\template.json"
+```
+<img src="/pictures/ias.png" title="inventory app service"  width="900">
+<img src="/pictures/ias2.png" title="inventory app service"  width="900">
+
+- upload the code
+<img src="/pictures/ias3.png" title="inventory app service"  width="900">
+
+- see that it's running
+<img src="/pictures/ias31.png" title="inventory app service"  width="900">
