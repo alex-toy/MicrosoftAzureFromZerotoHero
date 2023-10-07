@@ -186,9 +186,22 @@ az deployment group create --resource-group readit-app-rg --template-file "ARMTe
 
 - create a kubernetes cluster
 <img src="/pictures/cart5.png" title="cart"  width="500">
-<img src="/pictures/cart51.png" title="cart"  width="500">
+<img src="/pictures/cart51.png" title="cart"  width="900">
 
-- run commands
+### Azure Functions - Order App
+
+- execute locally
+<img src="/pictures/order.png" title="order"  width="900">
+
+- create *storage account*
 ```
-az aks install-cli
+az storage account create -n readitstoragealexei -g readit-app-rg -l northeurope --sku Standard_LRS
 ```
+<img src="/pictures/order2.png" title="order"  width="900">
+
+- create *function app*
+```
+az functionapp create -n readitfaalexei -s readitstoragealexei -g readit-app-rg --consumption-plan-location northeurope --functions-version 4 --runtime dotnet --runtime-version 6
+```
+<img src="/pictures/order3.png" title="order"  width="900">
+
