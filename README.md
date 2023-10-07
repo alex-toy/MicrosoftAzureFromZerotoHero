@@ -82,10 +82,13 @@ In order to quickly delete all resources, run
 
 ### Setting up the catalog app
 
-- create catalog VM
+- create resource group
 ```
 az group create -l northeurope -n readit-app-rg
+```
 
+- create catalog VM
+```
 az deployment group create --resource-group readit-app-rg --template-file "ARMTemplates\catalog\template.json" --parameters "ARMTemplates\catalog\parameters.json"
 ```
 <img src="/pictures/catalog_app.png" title="catalog app"  width="900">
