@@ -232,12 +232,17 @@ az functionapp create -n readitfaalexei -s readitstoragealexei -g readit-app-rg 
 - place that VM in the back VN
 <img src="/pictures/vn31.png" title="virtual networks"  width="500">
 
+It is possible to RDP from the front VM into the back VM, in spite of the fact that they are place in different subnets. This is because both VMs are placed in the same VN.
+
 - create another VN
 <img src="/pictures/vn4.png" title="virtual networks"  width="500">
 
 - create another VM
-<img src="/pictures/vn5.png" title="virtual networks"  width="500">
+<img src="/pictures/vn5.png" title="virtual networks"  width="900">
 
 - place that VM in the last VN
 <img src="/pictures/vn51.png" title="virtual networks"  width="500">
 
+So far, it is impossible to RDP to that VM from the front vm. This is because the VMs are placed in different VNs.
+<img src="/pictures/vn6.png" title="virtual networks"  width="900">
+<img src="/pictures/vn61.png" title="virtual networks"  width="900">
