@@ -215,8 +215,29 @@ az functionapp create -n readitfaalexei -s readitstoragealexei -g readit-app-rg 
 ### Virtual Networks
 
 - create VN
-<img src="/pictures/vn.png" title="virtual networks"  width="900">
+<img src="/pictures/vn.png" title="virtual networks"  width="500">
 
 - add a subnet
-<img src="/pictures/vn.png" title="virtual networks"  width="900">
+<img src="/pictures/vn1.png" title="virtual networks"  width="900">
+
+- create a front VM
+<img src="/pictures/vn2.png" title="virtual networks"  width="500">
+
+- place that VM in the front VN
+<img src="/pictures/vn3.png" title="virtual networks"  width="500">
+
+- create a back VM
+<img src="/pictures/vn21.png" title="virtual networks"  width="500">
+
+- place that VM in the back VN
+<img src="/pictures/vn31.png" title="virtual networks"  width="500">
+
+- create another VN
+<img src="/pictures/vn4.png" title="virtual networks"  width="500">
+
+- create another VM
+<img src="/pictures/vn5.png" title="virtual networks"  width="500">
+
+- place that VM in the last VN
+<img src="/pictures/vn51.png" title="virtual networks"  width="500">
 
