@@ -212,3 +212,11 @@ az functionapp create -n readitfaalexei -s readitstoragealexei -g readit-app-rg 
 <img src="/pictures/order5.png" title="order"  width="900">
 <img src="/pictures/order51.png" title="order"  width="900">
 
+### Virtual Networks
+
+- create VN
+<img src="/pictures/vn.png" title="virtual networks"  width="900">
+
+- add a subnet
+<img src="/pictures/vn.png" title="virtual networks"  width="900">
+
